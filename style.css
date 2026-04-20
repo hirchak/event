@@ -1,6 +1,6 @@
 /* ============================================================
    PREMIUM DESIGN SYSTEM — Seven Rays Event Landing Page
-   Light ethereal theme • warm cream • antique gold
+   Light premium theme • white & blue & gold
    Elegant mysticism meets professional excellence
    ============================================================ */
 
@@ -8,36 +8,38 @@
 
 /* ---------- Design Tokens ---------- */
 :root {
-  /* Backgrounds — Deep Nocturnal Blue */
-  --bg-deep: #080C18;
-  --bg-surface: #0D1220;
-  --bg-elevated: #141B2D;
-  --bg-card: #111827;
-  --bg-accent-soft: rgba(201, 169, 97, 0.08);
+  /* Backgrounds — Light Premium White with Blue */
+  --bg-deep: #FFFFFF;
+  --bg-surface: #F5F7FA;
+  --bg-elevated: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-accent-soft: rgba(59, 91, 156, 0.04);
+
+  /* Primary — Royal Blue */
+  --color-blue: #2C5282;
+  --color-blue-light: #4A7AB0;
+  --color-blue-dark: #1A365D;
+  --color-blue-glow: rgba(44, 82, 130, 0.12);
+  --color-blue-subtle: rgba(44, 82, 130, 0.06);
 
   /* Primary — Antique Gold */
-  --color-gold: #C9A961;
-  --color-gold-light: #E8D5A3;
-  --color-gold-dark: #9A7B3D;
-  --color-gold-glow: rgba(201, 169, 97, 0.2);
-  --color-gold-subtle: rgba(201, 169, 97, 0.1);
+  --color-gold: #B8860B;
+  --color-gold-light: #D4A843;
+  --color-gold-dark: #8B6508;
+  --color-gold-glow: rgba(184, 134, 11, 0.15);
+  --color-gold-subtle: rgba(184, 134, 11, 0.08);
 
-  /* Secondary — Deep Teal */
-  --color-emerald: #4A7C6F;
-  --color-emerald-light: #6B9E8F;
-  --color-emerald-glow: rgba(74, 124, 111, 0.2);
-
-  /* Text — Light on dark blue */
-  --color-text: #F0EDE8;
-  --color-text-secondary: #B8C4D4;
-  --color-text-muted: #8898B0;
-  --color-text-dim: #5A6A80;
+  /* Text — Dark on light */
+  --color-text: #1A202C;
+  --color-text-secondary: #4A5568;
+  --color-text-muted: #718096;
+  --color-text-dim: #A0AEC0;
 
   /* Border & Surface */
-  --color-border: rgba(201, 169, 97, 0.15);
-  --color-border-hover: rgba(201, 169, 97, 0.4);
-  --color-glass: rgba(8, 12, 24, 0.9);
-  --color-shadow: rgba(0, 0, 0, 0.5);
+  --color-border: rgba(44, 82, 130, 0.12);
+  --color-border-hover: rgba(44, 82, 130, 0.3);
+  --color-glass: rgba(255, 255, 255, 0.95);
+  --color-shadow: rgba(44, 82, 130, 0.06);
 
   /* Typography */
   --font-heading: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
@@ -63,21 +65,21 @@
   --duration-slow: 0.8s;
 }
 
-/* Light theme override (alternative) */
-[data-theme="light"] {
-  --bg-deep: #FAF8F5;
-  --bg-surface: #F3EFE9;
-  --bg-elevated: #FFFFFF;
-  --bg-card: #FFFFFF;
-  --bg-accent-soft: rgba(201, 169, 97, 0.06);
-  --color-text: #1C1816;
-  --color-text-secondary: #4A4541;
-  --color-text-muted: #7A7067;
-  --color-text-dim: #A09890;
-  --color-border: rgba(201, 169, 97, 0.18);
+/* Dark theme override (alternative) */
+[data-theme="dark"] {
+  --bg-deep: #080C18;
+  --bg-surface: #0D1220;
+  --bg-elevated: #141B2D;
+  --bg-card: #111827;
+  --bg-accent-soft: rgba(201, 169, 97, 0.08);
+  --color-text: #F0EDE8;
+  --color-text-secondary: #B8C4D4;
+  --color-text-muted: #8898B0;
+  --color-text-dim: #5A6A80;
+  --color-border: rgba(201, 169, 97, 0.15);
   --color-border-hover: rgba(201, 169, 97, 0.4);
-  --color-glass: rgba(250, 248, 245, 0.92);
-  --color-shadow: rgba(28, 24, 22, 0.08);
+  --color-glass: rgba(8, 12, 24, 0.9);
+  --color-shadow: rgba(0, 0, 0, 0.5);
 }
 
 /* ---------- Reset & Base ---------- */
