@@ -1,6 +1,6 @@
 /* ============================================================
    PREMIUM DESIGN SYSTEM — Seven Rays Event Landing Page
-   Warm dark palette • antique gold • emerald accents
+   Light ethereal theme • warm cream • antique gold
    Elegant mysticism meets professional excellence
    ============================================================ */
 
@@ -8,36 +8,36 @@
 
 /* ---------- Design Tokens ---------- */
 :root {
-  /* Backgrounds — Warm Dark (velvet darkness) */
-  --bg-deep: #0D0B0E;
-  --bg-surface: #1A1618;
-  --bg-elevated: #242022;
-  --bg-card: #1E1B1D;
-  --bg-accent-soft: rgba(201, 169, 97, 0.08);
+  /* Backgrounds — Warm Light (parchment/cream) */
+  --bg-deep: #FAF8F5;
+  --bg-surface: #F3EFE9;
+  --bg-elevated: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-accent-soft: rgba(184, 150, 62, 0.06);
 
   /* Primary — Antique Gold */
-  --color-gold: #C9A961;
-  --color-gold-light: #E8D5A3;
-  --color-gold-dark: #9A7B3D;
-  --color-gold-glow: rgba(201, 169, 97, 0.15);
-  --color-gold-subtle: rgba(201, 169, 97, 0.06);
+  --color-gold: #B8860B;
+  --color-gold-light: #D4A843;
+  --color-gold-dark: #8B6914;
+  --color-gold-glow: rgba(184, 150, 62, 0.15);
+  --color-gold-subtle: rgba(184, 150, 62, 0.08);
 
-  /* Secondary — Deep Emerald */
+  /* Secondary — Deep Teal */
   --color-emerald: #4A7C6F;
   --color-emerald-light: #6B9E8F;
-  --color-emerald-glow: rgba(74, 124, 111, 0.2);
+  --color-emerald-glow: rgba(74, 124, 111, 0.15);
 
-  /* Text — Warm dark theme with excellent contrast */
-  --color-text: #F5F0E8;
-  --color-text-secondary: #D0C8BE;
-  --color-text-muted: #A09890;
-  --color-text-dim: #7A726A;
+  /* Text — Light theme (dark on light) */
+  --color-text: #1C1816;
+  --color-text-secondary: #4A4541;
+  --color-text-muted: #7A7067;
+  --color-text-dim: #A09890;
 
   /* Border & Surface */
-  --color-border: rgba(201, 169, 97, 0.12);
-  --color-border-hover: rgba(201, 169, 97, 0.35);
-  --color-glass: rgba(13, 11, 14, 0.85);
-  --color-shadow: rgba(0, 0, 0, 0.4);
+  --color-border: rgba(184, 150, 62, 0.18);
+  --color-border-hover: rgba(184, 150, 62, 0.4);
+  --color-glass: rgba(250, 248, 245, 0.92);
+  --color-shadow: rgba(28, 24, 22, 0.08);
 
   /* Typography */
   --font-heading: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
@@ -63,21 +63,21 @@
   --duration-slow: 0.8s;
 }
 
-/* Light theme override (keep for accessibility) */
-[data-theme="light"] {
-  --bg-deep: #F8F5F0;
-  --bg-surface: #EDE8E1;
-  --bg-elevated: #FFFFFF;
-  --bg-card: #FFFFFF;
-  --bg-accent-soft: rgba(201, 169, 97, 0.06);
-  --color-text: #1A1618;
-  --color-text-secondary: #4A4541;
-  --color-text-muted: #7A7067;
-  --color-text-dim: #A8A095;
-  --color-border: rgba(201, 169, 97, 0.2);
-  --color-border-hover: rgba(201, 169, 97, 0.4);
-  --color-glass: rgba(248, 245, 240, 0.9);
-  --color-shadow: rgba(26, 22, 24, 0.08);
+/* Dark theme override (alternative) */
+[data-theme="dark"] {
+  --bg-deep: #0D0B0E;
+  --bg-surface: #1A1618;
+  --bg-elevated: #242022;
+  --bg-card: #1E1B1D;
+  --bg-accent-soft: rgba(184, 150, 62, 0.08);
+  --color-text: #F5F0E8;
+  --color-text-secondary: #D0C8BE;
+  --color-text-muted: #A09890;
+  --color-text-dim: #7A726A;
+  --color-border: rgba(184, 150, 62, 0.12);
+  --color-border-hover: rgba(184, 150, 62, 0.35);
+  --color-glass: rgba(13, 11, 14, 0.88);
+  --color-shadow: rgba(0, 0, 0, 0.4);
 }
 
 /* ---------- Reset & Base ---------- */
@@ -101,12 +101,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(201, 169, 97, 0.3);
+  background: rgba(184, 150, 62, 0.3);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(201, 169, 97, 0.5);
+  background: rgba(184, 150, 62, 0.5);
 }
 
 html {
@@ -288,8 +288,8 @@ section {
   height: 42px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 0 20px rgba(201, 169, 97, 0.3);
-  border: 1px solid rgba(201, 169, 97, 0.3);
+  box-shadow: 0 0 20px rgba(184, 150, 62, 0.3);
+  border: 1px solid rgba(184, 150, 62, 0.3);
 }
 
 .nav-logo-text {
@@ -484,9 +484,9 @@ section {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 50% 30%, rgba(201, 169, 97, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 30%, rgba(184, 150, 62, 0.08) 0%, transparent 50%),
     radial-gradient(ellipse at 20% 80%, rgba(74, 124, 111, 0.05) 0%, transparent 40%),
-    radial-gradient(ellipse at 80% 70%, rgba(201, 169, 97, 0.04) 0%, transparent 35%);
+    radial-gradient(ellipse at 80% 70%, rgba(184, 150, 62, 0.04) 0%, transparent 35%);
   pointer-events: none;
 }
 
@@ -525,7 +525,7 @@ section {
   border-radius: 50%;
   opacity: 0;
   animation: orbFloat 12s infinite ease-in-out;
-  background: radial-gradient(circle, rgba(201, 169, 97, 0.15), transparent 70%);
+  background: radial-gradient(circle, rgba(184, 150, 62, 0.15), transparent 70%);
 }
 
 .light-orb:nth-child(1) { left: 8%; top: 20%; width: 120px; height: 120px; animation-delay: 0s; }
@@ -571,8 +571,8 @@ section {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--color-gold);
-  background: rgba(201, 169, 97, 0.1);
-  border: 1px solid rgba(201, 169, 97, 0.3);
+  background: rgba(184, 150, 62, 0.1);
+  border: 1px solid rgba(184, 150, 62, 0.3);
   border-radius: var(--radius-pill);
   padding: 14px 36px;
   margin-bottom: 36px;
@@ -580,8 +580,8 @@ section {
 }
 
 @keyframes goldPulse {
-  0%, 100% { box-shadow: 0 0 20px rgba(201, 169, 97, 0.15); }
-  50% { box-shadow: 0 0 35px rgba(201, 169, 97, 0.3); }
+  0%, 100% { box-shadow: 0 0 20px rgba(184, 150, 62, 0.15); }
+  50% { box-shadow: 0 0 35px rgba(184, 150, 62, 0.3); }
 }
 
 .hero h1 {
@@ -703,7 +703,7 @@ a.hero-meta-item:hover svg {
 }
 
 .hero-tag:hover {
-  background: rgba(201, 169, 97, 0.1);
+  background: rgba(184, 150, 62, 0.1);
   border-color: var(--color-gold);
   color: var(--color-gold);
   transform: translateY(-3px);
@@ -765,14 +765,14 @@ a.hero-meta-item:hover svg {
 .btn-primary {
   background: linear-gradient(135deg, var(--color-gold), var(--color-gold-dark));
   color: var(--bg-deep);
-  box-shadow: 0 4px 24px rgba(201, 169, 97, 0.25),
-              0 0 0 0 rgba(201, 169, 97, 0.3);
+  box-shadow: 0 4px 24px rgba(184, 150, 62, 0.25),
+              0 0 0 0 rgba(184, 150, 62, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 40px rgba(201, 169, 97, 0.4),
-              0 0 60px rgba(201, 169, 97, 0.15);
+  box-shadow: 0 8px 40px rgba(184, 150, 62, 0.4),
+              0 0 60px rgba(184, 150, 62, 0.15);
   color: var(--bg-deep);
 }
 
@@ -795,7 +795,7 @@ a.hero-meta-item:hover svg {
   border-color: var(--color-gold);
   color: var(--color-gold);
   transform: translateY(-3px);
-  background: rgba(201, 169, 97, 0.08);
+  background: rgba(184, 150, 62, 0.08);
 }
 
 .btn-outline:active {
@@ -930,7 +930,7 @@ a.hero-meta-item:hover svg {
 .wisdom-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 40px var(--color-shadow),
-              0 0 40px rgba(201, 169, 97, 0.08);
+              0 0 40px rgba(184, 150, 62, 0.08);
   border-color: var(--color-border-hover);
 }
 
@@ -945,7 +945,7 @@ a.hero-meta-item:hover svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(201, 169, 97, 0.1);
+  background: rgba(184, 150, 62, 0.1);
   border-radius: 16px;
   color: var(--color-gold);
 }
@@ -974,9 +974,9 @@ a.hero-meta-item:hover svg {
   margin: 0 auto;
   text-align: center;
   padding: 40px 48px;
-  background: linear-gradient(135deg, rgba(201, 169, 97, 0.08), rgba(74, 124, 111, 0.05));
+  background: linear-gradient(135deg, rgba(184, 150, 62, 0.08), rgba(74, 124, 111, 0.05));
   border-radius: var(--radius);
-  border: 1px solid rgba(201, 169, 97, 0.15);
+  border: 1px solid rgba(184, 150, 62, 0.15);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
   position: relative;
   overflow: hidden;
@@ -1055,12 +1055,12 @@ a.hero-meta-item:hover svg {
 
 /* Gold accent on insight cards in dark mode */
 [data-theme="dark"] .insight-card:hover {
-  border-color: rgba(201, 169, 97, 0.3);
-  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.5), 0 0 40px rgba(201, 169, 97, 0.08);
+  border-color: rgba(184, 150, 62, 0.3);
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.5), 0 0 40px rgba(184, 150, 62, 0.08);
 }
 
 [data-theme="dark"] .transform-item:hover {
-  border-color: rgba(201, 169, 97, 0.2);
+  border-color: rgba(184, 150, 62, 0.2);
 }
 
 .insights-grid {
@@ -1096,7 +1096,7 @@ a.hero-meta-item:hover svg {
 .insight-card:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 24px 56px var(--color-shadow),
-              0 0 50px rgba(201, 169, 97, 0.1);
+              0 0 50px rgba(184, 150, 62, 0.1);
   border-color: var(--color-border-hover);
 }
 
@@ -1120,12 +1120,12 @@ a.hero-meta-item:hover svg {
   stroke: var(--color-gold);
   fill: none;
   stroke-width: 1.2;
-  filter: drop-shadow(0 0 12px rgba(201, 169, 97, 0.3));
+  filter: drop-shadow(0 0 12px rgba(184, 150, 62, 0.3));
   transition: all var(--duration) var(--ease-out);
 }
 
 .insight-card:hover .insight-icon svg {
-  filter: drop-shadow(0 0 20px rgba(201, 169, 97, 0.5));
+  filter: drop-shadow(0 0 20px rgba(184, 150, 62, 0.5));
   transform: scale(1.08);
 }
 
@@ -1190,12 +1190,12 @@ a.hero-meta-item:hover svg {
   stroke: var(--color-gold);
   fill: none;
   stroke-width: 1.2;
-  filter: drop-shadow(0 0 10px rgba(201, 169, 97, 0.25));
+  filter: drop-shadow(0 0 10px rgba(184, 150, 62, 0.25));
   transition: all var(--duration) var(--ease-out);
 }
 
 .transform-item:hover .transform-icon svg {
-  filter: drop-shadow(0 0 18px rgba(201, 169, 97, 0.4));
+  filter: drop-shadow(0 0 18px rgba(184, 150, 62, 0.4));
   transform: scale(1.05);
 }
 
@@ -1273,7 +1273,7 @@ a.hero-meta-item:hover svg {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(201, 169, 97, 0.05), transparent);
+  background: linear-gradient(135deg, rgba(184, 150, 62, 0.05), transparent);
   opacity: 0;
   transition: opacity var(--duration) ease;
 }
@@ -1281,7 +1281,7 @@ a.hero-meta-item:hover svg {
 .qigong-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 48px var(--color-shadow),
-              0 0 50px rgba(201, 169, 97, 0.08);
+              0 0 50px rgba(184, 150, 62, 0.08);
   border-color: var(--color-gold);
 }
 
@@ -1305,12 +1305,12 @@ a.hero-meta-item:hover svg {
   stroke: var(--color-gold);
   fill: none;
   stroke-width: 1.2;
-  filter: drop-shadow(0 0 12px rgba(201, 169, 97, 0.25));
+  filter: drop-shadow(0 0 12px rgba(184, 150, 62, 0.25));
   transition: all var(--duration) var(--ease-out);
 }
 
 .qigong-card:hover .qigong-icon svg {
-  filter: drop-shadow(0 0 20px rgba(201, 169, 97, 0.4));
+  filter: drop-shadow(0 0 20px rgba(184, 150, 62, 0.4));
   transform: scale(1.05);
 }
 
@@ -1384,7 +1384,7 @@ a.hero-meta-item:hover svg {
 .approach-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 52px var(--color-shadow),
-              0 0 40px rgba(201, 169, 97, 0.08);
+              0 0 40px rgba(184, 150, 62, 0.08);
   border-color: var(--color-border-hover);
 }
 
@@ -1399,7 +1399,7 @@ a.hero-meta-item:hover svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(201, 169, 97, 0.08);
+  background: rgba(184, 150, 62, 0.08);
   border-radius: 20px;
 }
 
@@ -1414,7 +1414,7 @@ a.hero-meta-item:hover svg {
 
 .approach-card:hover .approach-icon svg {
   transform: scale(1.05);
-  filter: drop-shadow(0 0 14px rgba(201, 169, 97, 0.4));
+  filter: drop-shadow(0 0 14px rgba(184, 150, 62, 0.4));
 }
 
 .approach-card h3 {
@@ -1479,7 +1479,7 @@ a.hero-meta-item:hover svg {
   background: var(--color-gold);
   border-color: var(--color-gold);
   color: var(--bg-deep);
-  box-shadow: 0 6px 24px rgba(201, 169, 97, 0.25);
+  box-shadow: 0 6px 24px rgba(184, 150, 62, 0.25);
 }
 
 .theme-btn.active svg {
@@ -1555,7 +1555,7 @@ a.hero-meta-item:hover svg {
 
 .carousel-slide:hover::after {
   border-color: var(--color-gold);
-  box-shadow: inset 0 0 30px rgba(201, 169, 97, 0.15);
+  box-shadow: inset 0 0 30px rgba(184, 150, 62, 0.15);
 }
 
 /* Caption overlay */
@@ -1655,7 +1655,7 @@ a.hero-meta-item:hover svg {
   transform: translateY(-10px);
   border-color: var(--color-gold);
   box-shadow: 0 32px 64px var(--color-shadow),
-              0 0 50px rgba(201, 169, 97, 0.1);
+              0 0 50px rgba(184, 150, 62, 0.1);
 }
 
 .target-icon {
@@ -1665,7 +1665,7 @@ a.hero-meta-item:hover svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(201, 169, 97, 0.1);
+  background: rgba(184, 150, 62, 0.1);
   border-radius: 20px;
   color: var(--color-gold);
 }
@@ -1689,8 +1689,8 @@ a.hero-meta-item:hover svg {
 }
 
 .featured-blue {
-  background: linear-gradient(135deg, rgba(201, 169, 97, 0.06), rgba(74, 124, 111, 0.04));
-  border-color: rgba(201, 169, 97, 0.2);
+  background: linear-gradient(135deg, rgba(184, 150, 62, 0.06), rgba(74, 124, 111, 0.04));
+  border-color: rgba(184, 150, 62, 0.2);
 }
 
 .featured-blue:hover {
@@ -1757,7 +1757,7 @@ a.hero-meta-item:hover svg {
 
 .schedule-card.featured {
   border-color: var(--color-gold);
-  background: linear-gradient(180deg, rgba(201, 169, 97, 0.08), var(--bg-card) 60%);
+  background: linear-gradient(180deg, rgba(184, 150, 62, 0.08), var(--bg-card) 60%);
 }
 
 .schedule-card.featured::before {
@@ -1819,7 +1819,7 @@ a.hero-meta-item:hover svg {
   display: inline-block;
   margin-top: 14px;
   padding: 6px 18px;
-  background: rgba(201, 169, 97, 0.1);
+  background: rgba(184, 150, 62, 0.1);
   border-radius: var(--radius-pill);
   font-size: 0.75rem;
   font-weight: 600;
@@ -1893,7 +1893,7 @@ a.hero-meta-item:hover svg {
 .pricing-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 32px 68px var(--color-shadow),
-              0 0 60px rgba(201, 169, 97, 0.12);
+              0 0 60px rgba(184, 150, 62, 0.12);
   border-color: var(--color-border-hover);
 }
 
@@ -1903,7 +1903,7 @@ a.hero-meta-item:hover svg {
 
 .pricing-card--primary {
   border: 2px solid var(--color-gold);
-  background: linear-gradient(180deg, rgba(201, 169, 97, 0.1), var(--bg-card) 50%);
+  background: linear-gradient(180deg, rgba(184, 150, 62, 0.1), var(--bg-card) 50%);
 }
 
 .pricing-card--primary .price-val {
@@ -1953,7 +1953,7 @@ a.hero-meta-item:hover svg {
   color: var(--color-gold);
   opacity: 0.8;
   text-decoration: none;
-  border-bottom: 1px solid rgba(201, 169, 97, 0.3);
+  border-bottom: 1px solid rgba(184, 150, 62, 0.3);
   padding-bottom: 2px;
   transition: all 0.25s ease;
 }
@@ -2073,7 +2073,7 @@ a.hero-meta-item:hover svg {
 }
 
 .location-visual {
-  background: linear-gradient(135deg, rgba(201, 169, 97, 0.1), rgba(74, 124, 111, 0.08));
+  background: linear-gradient(135deg, rgba(184, 150, 62, 0.1), rgba(74, 124, 111, 0.08));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2106,7 +2106,7 @@ a.hero-meta-item:hover svg {
   width: 44px;
   height: 44px;
   stroke: var(--color-gold);
-  fill: rgba(201, 169, 97, 0.15);
+  fill: rgba(184, 150, 62, 0.15);
   stroke-width: 1.5;
   margin: 18px auto 0;
   display: block;
