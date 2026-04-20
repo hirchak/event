@@ -568,7 +568,7 @@ function setupTheme() {
   toggleBtn.addEventListener('click', () => {
     const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
     if (isDark) {
-      document.documentElement.removeAttribute('data-theme');
+      document.documentElement.setAttribute('data-theme', 'light');
       localStorage.setItem('event-theme', 'light');
     } else {
       document.documentElement.setAttribute('data-theme', 'dark');
