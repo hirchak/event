@@ -24,6 +24,7 @@ const translations = {
     hero_insta: 'Instagram',
     hero_cta: 'Забронировать место',
     hero_cta2: 'Изучить программу',
+    pricing_badge_note: 'Участникам клуба Santiago',
 
     tag_lectures: 'Лекции',
     tag_qigong: 'Цигун',
@@ -130,6 +131,7 @@ const translations = {
     hero_insta: 'Instagram',
     hero_cta: 'Забронювати місце',
     hero_cta2: 'Вивчити програму',
+    pricing_badge_note: 'Учасникам клубу Santiago',
 
     tag_lectures: 'Лекції',
     tag_qigong: 'Цигун',
