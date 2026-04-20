@@ -27,11 +27,11 @@
   --color-emerald-light: #6B9E8F;
   --color-emerald-glow: rgba(74, 124, 111, 0.2);
 
-  /* Text */
+  /* Text — Warm dark theme with excellent contrast */
   --color-text: #F5F0E8;
-  --color-text-secondary: #C4BAB0;
-  --color-text-muted: #7A7067;
-  --color-text-dim: #5A524B;
+  --color-text-secondary: #D0C8BE;
+  --color-text-muted: #A09890;
+  --color-text-dim: #7A726A;
 
   /* Border & Surface */
   --color-border: rgba(201, 169, 97, 0.12);
